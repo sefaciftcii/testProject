@@ -12,9 +12,13 @@
     
 
     <div class="container">
-        <div class="alert alert-primary" role="alert">
+        <div class="alert alert-primary" class="margin-top:100px" role="alert">
             A simple primary alert—check it out!
-          </div>
+        </div>
+
+        <div>
+            <img width="100px" height="100px"  src="{{asset('images/faruk.png')}}"/>
+        </div>
     </div>
 
 
