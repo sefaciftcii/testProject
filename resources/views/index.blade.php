@@ -52,6 +52,21 @@
             </div>
         </section>
 
+        <!--veri tabani-->
+        <section>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <ul >
+                        @foreach ($personel as $pers)  
+                            <li>{{$pers->name}}</li> 
+                            <li>{{$pers->identity}}</li>   
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Yetenekler Bölümü -->
         <section id="yetenekler" style="margin-bottom: 4rem; background-color: white; border-radius: 8px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
             <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50; position: relative; padding-bottom: 0.5rem;">Yeteneklerim</h2>

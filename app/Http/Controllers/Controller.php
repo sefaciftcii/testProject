@@ -1,8 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Personel;
 
-abstract class Controller
+class Controller
 {
-    //
+    public function index(){
+        $personel = Personel::all();
+        return view('index' , compact('personel'));
+    }
 }
